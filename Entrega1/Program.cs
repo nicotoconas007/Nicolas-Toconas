@@ -23,9 +23,9 @@ UsersList = usuario.ListarUsuarios();
 
 foreach (var u in UsersList)
 {
-    Console.WriteLine(u.Id);
-    Console.WriteLine(u.Apellido);
-    Console.WriteLine(u.Nombre);
+    Console.WriteLine("Id: " + u.Id);
+    Console.WriteLine("Apellido: " + u.Apellido);
+    Console.WriteLine("Nombre:" + u.Nombre);
 }
 Console.WriteLine("");
 
@@ -54,9 +54,9 @@ VentasList = venta.ListarVentas();
 
 foreach (var v in VentasList)
 {
-    Console.WriteLine(v.Id);
-    Console.WriteLine(v.Comentarios);
-    Console.WriteLine(v.IdUsuario);
+    Console.WriteLine("Id: " + v.Id);
+    Console.WriteLine("Comentarios: " + v.Comentarios);
+    Console.WriteLine("IdUsuarop:" + v.IdUsuario);
 }
 Console.WriteLine("");
 
@@ -68,10 +68,10 @@ ProductosVendidosList = productoVendido.ListarProductoVendido();
 
 foreach (var pv in ProductosVendidosList)
 {
-    Console.WriteLine(pv.Id);
-    Console.WriteLine(pv.IdProducto);
-    Console.WriteLine(pv.Stock);
-    Console.WriteLine(pv.IdVenta);
+    Console.WriteLine("Id: " + pv.Id);
+    Console.WriteLine("IdProducto: " + pv.IdProducto);
+    Console.WriteLine("Stock: " + pv.Stock);
+    Console.WriteLine("IdVenta: " + pv.IdVenta);
 }
 Console.WriteLine("");
 
